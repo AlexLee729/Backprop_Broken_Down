@@ -78,5 +78,12 @@ w2 = Value(1.0, label='w2')
 b = Value(6.88, label='b')
 
 # Forward pass: x1*w1 + x2*w2 + b
-n = x1 * w1
+n = x1 * w1 + x2 * w2 + b
+
+# Apply tanh activation
+o = n.tanh()
+o.label = 'output'
+
+# Backward pass (computes gradients)
+o.backward()
 ```
