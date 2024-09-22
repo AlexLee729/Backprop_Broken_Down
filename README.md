@@ -1,4 +1,4 @@
-# Custom MLP from Scratch with Manual Backpropagation
+# Manual Backpropagation
 
 This repository implements a simple **Multilayer Perceptron (MLP)** from scratch using pure Python. The primary focus of this project is to give a hands-on understanding of **backpropagation**, the fundamental algorithm behind training neural networks. Instead of relying on a machine learning framework like PyTorch or TensorFlow, this code manually computes gradients and updates weights using chain rule differentiation.
 
