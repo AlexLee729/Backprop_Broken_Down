@@ -39,7 +39,7 @@ During the forward pass, the input is passed through each layer of the network, 
 Backpropagation is performed manually by calculating the derivative of the loss with respect to each parameter (weights and biases). This is done using the **chain rule**, which allows us to propagate gradients backwards from the output through the layers of the network.
 
 ### 3. Gradient Descent
-Once the gradients are computed via backpropagation, they are used to update the weights and biases of the network. This is done using **gradient descent**, which adjusts the parameters in the direction that reduces the loss.
+Once the gradients are computed via backpropagation, they are used to update the weights and biases of the network. This is done using **gradient descent**, which adjusts the parameters in the direction that reduces the loss. If the gradient is negative, then the weight or bias will be increased in the opposite direction to reduce the loss.
 
 ### Training Example
 The training loop uses four input-output pairs. In each iteration:
